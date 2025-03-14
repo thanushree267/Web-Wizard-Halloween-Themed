@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Halloween Masquerade</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"> <!-- Add Google Font for Halloween -->
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="background-video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="img/login-back.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-message"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/ieee.png" alt="IEEE Logo" class="ieee-logo">
+        <span class="ieee-text">IEEE Communication Society</span>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

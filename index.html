@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Masquerade</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts for Halloween theme -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Creepster', cursive;
+            overflow-x: hidden; /* Prevent horizontal scroll bars due to video overflow */
+        }
+
+        .header, .navbar, .info-section, .info-columns, .social-media, .copyright {
+            font-family: 'Creepster', cursive;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* Adjusted to take 80% of viewport height */
+            overflow: hidden; /* Hide overflow to keep the layout clean */
+        }
+
+        .hero-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+            transform: translate(-50%, -50%); /* Center the video */
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5); /* Slightly darken background to improve text readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .info-icon {
+            font-size: 2em;
+            color: darkorange;
+        }
+
+        .social-icon {
+            font-size: 2em;
+            color: white;
+            margin: 0 10px;
+        }
+
+        .social-icon:hover {
+            color: darkorange;
+        }
+
+        .top-books, .top-games, .info-section, .info-columns, .social-media, .copyright {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <img src="img/dsu.png" alt="Logo" class="logo">
+            <h1>Dayananda Sagar University</h1>
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="Search..." class="search-box">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="movies.html">Movies</a></li>
+            <li>
+                <a href="#">Games</a>
+                <ul class="dropdown">
+                    <li><a href="xyz.html">XYZ</a></li>
+                    <li><a href="ysc.html">YSC</a></li>
+                    <li><a href="abc.html">ABC</a></li>
+                    <li><a href="anv.html">ANV</a></li>
+                </ul>
+            </li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="img/back.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h2>Welcome to Halloween Masquerade</h2>
+            <p>Your ultimate destination for Halloween games, Books and Movies!</p>
+        </div>
+    </section>
+
+    <!-- Top Books Section -->
+    <section class="top-books">
+        <h2>Top Book Pics</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="link-to-book1.html"><img src="img/Book1.png" alt="Book 1" class="carousel-image"></a>
+                <p><a href="link-to-book1.html">Halloween Party</a></p>
+            </div>
+            <div class="carousel-item">
+                <a href="link-to-book2.html"><img src="img/Book2.png" alt="Book 2" class="carousel-image"></a>
+                <p><a href="link-to-book2.html">Dark Harvest</a></p>
+            </div>
+            <div class="carousel-item">
+                <a href="link-to-book3.html"><img src="img/Book3.png" alt="Book 3" class="carousel-image"></a>
+                <p><a href="link-to-book3.html">When Things Get Dark</a></p>
+            </div>
+            <div class="carousel-item">
+                <a href="link-to-book4.html"><img src="img/Book4.png" alt="Book 4" class="carousel-image"></a>
+                <p><a href="link-to-book4.html">Legend of Sleepy Hollow</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Games Section -->
+    <section class="top-games">
+        <h2>Top Games</h2>
+        <div class="games-container">
+            <div class="game-item"><a href="xyz.html"><img src="img/download.png" alt="Game 1"><p>Memory Game</p></a></div>
+            <div class="game-item"><a href="ysc.html"><img src="img/Game2.png" alt="Game 2"><p>Candy Catcher</p></a></div>
+            <div class="game-item"><a href="abc.html"><img src="img/Game3.png" alt="Game 3"><p>Scary Meze</p></a></div>
+            <div class="game-item"><a href="anv.html"><img src="img/Game4.png" alt="Game 4"><p>Word Search</p></a></div>
+        </div>
+    </section>
+
+    <!-- Last Row with Icons and Messages -->
+    <section class="info-section">
+        <div class="info-item">
+            <i class="fas fa-tshirt info-icon"></i>
+            <div class="info-text">
+                <h3>1000's of Costume Ideas</h3>
+                <p>We're one of the largest fancy dress stores in the UK!</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-headset info-icon"></i>
+            <div class="info-text">
+                <h3>Dedicated Customer Service</h3>
+                <p>Email us, call us or ask a question on live chat</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-lock info-icon"></i>
+            <div class="info-text">
+                <h3>Secure Shopping</h3>
+                <p>Shop securely online with your favourite payment methods</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informational Sections -->
+    <section class="info-columns">
+        <div class="info-column">
+            <h3>THE HOME OF GREAT COSTUMES</h3>
+            <p>From nights out with friends to entertain you, we have fancy books,movies to suit every occasion! Be whoever you want to be with Joke.co.uk.</p>
+        </div>
+        <div class="info-column">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Newsletter Signup</a></li>
+            </ul>
+        </div>
+        <div class="info-column">
+            <h3>How can we help?</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Help Centre</a></li>
+            </ul>
+        </div>
+        <div class="info-column">
+            <h3>Sign up for emails</h3>
+            <p>Be the first to hear about special editions and new add on's.</p>
+        </div>
+    </section>
+
+    <!-- Follow Us Section -->
+    <section class="social-media">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright Section -->
+    <section class="copyright">
+        <p>&copy; 2024 Jokers Masquerade. All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

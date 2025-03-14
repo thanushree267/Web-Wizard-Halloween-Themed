@@ -1,0 +1,46 @@
+/* styles1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/download.png') no-repeat center center fixed;
+    background-size: cover;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: shadow to make text stand out */
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}

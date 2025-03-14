@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween Countdown</title>
+  <link rel="stylesheet" href="count.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <div class="background-video-container">
+    <video autoplay muted loop class="background-video">
+      <source src="img/count.mp4" type="video/mp4"> <!-- Add the path to your background video -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Content -->
+  <div id="container">
+    <h1>👻 Halloween Countdown 👻</h1>
+    <div id="countdown">
+      <div id="days" class="countdown-item"></div>
+      <div id="hours" class="countdown-item"></div>
+      <div id="minutes" class="countdown-item"></div>
+      <div id="seconds" class="countdown-item"></div>
+    </div>
+    <a href="index.html" class="button">Homepage</a>
+  </div>
+
+  <script src="count.js"></script>
+</body>
+</html>

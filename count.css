@@ -1,0 +1,88 @@
+/* Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scroll bars due to video overflow */
+  font-family: 'Creepster', cursive; /* Use the Halloween font */
+  color: white; /* Text color to contrast with the background */
+}
+
+/* Background Video Styles */
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  transform: translate(-50%, -50%);
+}
+
+/* Container Styles */
+#container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background to improve readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Shadow effect for floating look */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: orange;
+  text-shadow: 3px 3px 6px black; /* Glow effect for the heading */
+}
+
+#decorative-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.countdown-item {
+  font-size: 2em;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Background for countdown items */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Shadow for countdown items */
+}
+
+.button {
+  display: inline-block;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect for the button */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: darkorange;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
